@@ -1,0 +1,28 @@
+{
+  "locations": [
+      {
+          "id": 0,
+          "name": "Organise items",
+        "description": " Organise things ....",
+        "status": "to do"
+      },
+      {
+        "id": 1,
+        "name": "Make calls",
+      "description": " Lots of info about making calls ....",
+      "status": "to do"
+    },
+    {
+      "id": 2,
+      "name": "shopping ",
+    "description": " Lots of shopping.",
+    "status": "doing"
+  },
+  {
+    "id": 3,
+    "name": "work ",
+  "description": " Do some work.",
+  "status": "done"
+}
+  ]
+    }
