@@ -1,28 +1,40 @@
 {
   "locations": [
-      {
-          "id": 0,
-          "name": "Organise items",
-        "description": " Organise things ....",
-        "status": "to do"
-      },
-      {
-        "id": 1,
-        "name": "Make calls",
-      "description": " Lots of info about making calls ....",
+    {
+      "id": 1,
+      "name": "Organise items",
+      "description": " Organise lots of things 1. first things, 2nd thing ....",
       "status": "to do"
     },
     {
       "id": 2,
+      "name": "Make calls",
+      "description": " Lots of info about making calls ....",
+      "status": "to do"
+    },
+    {
+      "id": 3,
       "name": "shopping ",
-    "description": " Lots of shopping.",
-    "status": "doing"
-  },
-  {
-    "id": 3,
-    "name": "work ",
-  "description": " Do some work.",
-  "status": "done"
-}
-  ]
+      "description": " Lots of shopping info, things to buy - apples, bread.",
+      "status": "doing"
+    },
+    {
+      "id": 4,
+      "name": "Write code",
+      "description": "Write some code",
+      "status": "to do"
+    },
+    {
+      "id": 5,
+      "name": "Check Emails",
+      "description": "Read all the emails and send replies",
+      "status": "to do"
+    },
+    {
+      "id": 6,
+      "name": "Test code",
+      "description": "Write some tests for the code",
+      "status": "to do"
     }
+  ]
+}

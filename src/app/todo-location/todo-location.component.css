@@ -1,0 +1,35 @@
+
+.todo {
+  color: var(--primary-color);
+  padding: 5px 5x 0 5px;
+}
+.todo-name {
+  padding: 5px;
+}
+.todo-status {
+  padding: 5px;
+}
+.todo_button {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  justify-content: margin-left; /* Center the buttons */
+  align-items: center; /* Vertically center buttons */
+  flex-wrap: wrap; /* Wrap buttons on smaller screens */
+  margin-top: 10px; /* Add some space at the top */
+}
+
+
+ section.todo a {
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+section.todo a:hover {
+  padding-left: 10px;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+ section.todo a::after {
+  margin-left: 5px;
+}

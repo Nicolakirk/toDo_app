@@ -1,0 +1,9 @@
+
+<button
+[ngClass] = "getButtonClass()"
+[style.background-color]= "backgroundColor"
+[style.color]="color"
+(click)="onClick()">
+{{ getButtonLabel() }}
+</button>
+

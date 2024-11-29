@@ -1,0 +1,25 @@
+button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-to-do {
+  background-color: darkgreen;
+  color:white
+}
+
+.btn-doing {
+  background-color: darkblue;
+  color:white;
+}
+.btn-done {
+  background-color: darkblue;
+  color: white;
+}
+.btn-default {
+  background-color: darkgrey;  /* Default background color */
+  color: black;  /* Default text color */
+}

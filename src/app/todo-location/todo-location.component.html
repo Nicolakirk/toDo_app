@@ -1,0 +1,39 @@
+<section class="todo">
+  <h3 class = "todo-name" >{{ todoLocation.name }}</h3>
+  <p class = "todo-status">Status: {{ todoLocation.status }}</p>
+<section class= "todo_button">
+
+<app-button
+[text]="'Start Task'"
+      [status]="todoLocation.status"
+    
+      [color]="'white'"
+      (statusChange)="changeStatus($event)">
+</app-button>
+  <!-- <button
+(click)="changeStatus('doing')"
+*ngIf="todoLocation.status === 'to do'"
+[ngStyle]="{ 'background-color': 'green', 'color': 'white' }">
+Start
+</button>
+
+<!-- Finished button -->
+<!-- <button
+(click)="changeStatus('done')"
+*ngIf="todoLocation.status === 'doing'"
+[ngStyle]="{ 'background-color': 'red', 'color': 'white' }">
+Finished
+</button>
+
+<!-- Reopen button -->
+<!-- <button
+(click)="changeStatus('todo')"
+*ngIf="todoLocation.status === 'done'"
+[ngStyle]="{ 'background-color': 'gray', 'color': 'white' }">
+Reopen
+</button> --> --> -->
+</section>
+<section >
+  <a [routerLink]="['/todo', todoLocation.id]">Learn More</a>
+</section>
+</section>

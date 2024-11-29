@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: rgb(248, 249, 249);
+}
+:root {
+  --primary-color: #100f44;
+  --secondary-color: #740202;
+  --accent-color: #e8e8ee;
+  --shadow-color: #d1cccc;
+}
+
+
+a, a:visited, a:hover, a:focus, a:active {
+  text-decoration: none !important;
+}
+
