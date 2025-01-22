@@ -26,7 +26,7 @@ export class DetailsComponent {
   todoLocation: TodoLocation | undefined;
 
   constructor() {
-    const todoLocationId = parseInt(this.route.snapshot.params['id'], 10);
+    const todoLocationId = parseInt(this.route.snapshot.params['todo_id'], 10);
 
     this.todoService
       .getTodoLocationById(todoLocationId)

@@ -1,0 +1,39 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <p>
+    <label for="name">To-do name:</label>
+    <input id="name" type="text" formControlName="name" />
+    <span *ngIf="form.controls.name.invalid && form.controls.name.touched">
+  Name is required.
+    </span>
+  </p>
+
+  <p>
+    <label for="description">Description:</label>
+    <textarea
+      id="description"
+      formControlName="description"
+      rows="8"
+      cols="30"
+    ></textarea>
+    <span *ngIf="form.controls.description.invalid && form.controls.description.touched">
+      Description is required.
+    </span>
+  </p>
+
+  <p>
+    <label for="status">Status:</label>
+    <input id="status" type="string" formControlName="status" />
+    <span *ngIf="form.controls.status.invalid && form.controls.status.touched">
+     status is required.
+    </span>
+  </p>
+
+
+  <p>
+    <button type="submit" [disabled]="form.invalid">Submit</button>
+  </p>
+  <p *ngIf="submissionSuccess" style="color: green; font-weight: bold;">Todo item submitted successfully!</p>
+
+</form>
+

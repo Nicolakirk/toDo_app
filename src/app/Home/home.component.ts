@@ -11,7 +11,7 @@ import { TodoLocation } from '../todo.location';
   template: `
     <section class="results">
       <div class="todo-card" *ngFor="let todoLocation of todoLocationList">
-        <app-todo-location [todoLocation]="todoLocation" (statusChange)="handleStatusChange($event)"></app-todo-location>
+        <app-todo-location [todoLocation]="todoLocation" ></app-todo-location>
       </div>
     </section>
   `,
@@ -28,18 +28,21 @@ export class HomeComponent {
   async loadTodoLocations() {
     try {
       this.todoLocationList = await this.todoService.getAllTodoLocations();
+      console.log(this.todoLocationList)
     } catch (error) {
       console.error('Error loading todo locations:', error);
     }
   }
+
   handleStatusChange(updatedLocation: TodoLocation): void {
-    // Handle the status update here (e.g., send it to a service or update the UI)
-    console.log('Updated todoLocation status:', updatedLocation.status);
-    // Update the todoLocationList with the updated status
-    const index = this.todoLocationList.findIndex(location => location.id === updatedLocation.id);
+
+    const index = this.todoLocationList.findIndex(location => location.todo_id === updatedLocation.todo_id);
     if (index !== -1) {
       this.todoLocationList[index] = updatedLocation;
     }
+  }
+  ngOnInit(): void {
+    // Any additional initialization if needed
   }
 }
 

@@ -1,6 +1,6 @@
 export interface TodoLocation {
-  id: number;
+  todo_id: number|undefined;
   name: string;
   description: string;
-  status: string; // Example of using union types for status
+  status: string;
 }
