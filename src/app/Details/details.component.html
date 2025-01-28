@@ -1,0 +1,10 @@
+<article>
+  <section class="todo-details-card">
+    <h2 class="todo-details-heading">{{ todoLocation?.name }}</h2>
+    <p class="todo-details-description">{{ todoLocation?.description }}</p>
+    <p class="todo-details-status">Status: {{ todoLocation?.status }}</p>
+    <button type="button" (click)="deleteTodo()"> Delete Todo</button>
+    <p *ngIf="deleteSuccess" style="color: rgb(78, 169, 78); font-weight: bold;">Todo item deleted successfully!</p>
+
+  </section>
+</article>

@@ -9,12 +9,16 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   imports: [RouterOutlet, RouterLink],
   template: `
     <main>
-
+    <header class="brand-name">
       <a [routerLink]="['/']">
-        <header class="brand-name">
+
          <h1> To Do App</h1>
+         </a>
+         <a [routerLink]="['/add_todo']" class="todo-post-link">
+      + To-do
+    </a>
         </header>
-      </a>
+
       <section class="content">
         <router-outlet></router-outlet>
       </section>

@@ -51,12 +51,10 @@ export class Post_todoComponent implements OnInit {
 
     // Send the form data to the service as JSON
     await this.todoService.submitTodo(formData);
-
     this.submissionSuccess = true;
 
     // Reset the form after a successful submission
     this.form.reset();
-
     // Optionally, hide the success message after a few seconds
     setTimeout(() => {
       this.submissionSuccess = false;
