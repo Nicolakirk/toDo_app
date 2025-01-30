@@ -8,13 +8,7 @@ import { TodoLocation } from '../todo.location';
   selector: 'app-home',
   standalone: true,
   imports: [CommonModule, TodoLocationComponent],
-  template: `
-    <section class="results">
-      <div class="todo-card" *ngFor="let todoLocation of todoLocationList">
-        <app-todo-location [todoLocation]="todoLocation" ></app-todo-location>
-      </div>
-    </section>
-  `,
+  templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { TodoService } from '../todo.service';
 import { TodoLocation } from '../todo.location';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import {  ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-details',

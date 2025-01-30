@@ -80,7 +80,7 @@ export class TodoService {
   async deleteItem(todo_id: number): Promise<number> {
     try {
       // Log for debugging
-      console.log("Deleting Todo ID:", todo_id);
+      console.log('Deleting Todo ID:', todo_id);
 
       // Send the DELETE request to the backend
       const response = await fetch(`${this.url}todo/${todo_id}`, {
@@ -96,18 +96,15 @@ export class TodoService {
         return response.status; // Return the status code (204)
       } else if (!response.ok) {
         // Handle non-success status codes
-        throw new Error(`Failed to delete todo with ID ${todo_id}: ${response.statusText}`);
+        throw new Error(
+          `Failed to delete todo with ID ${todo_id}: ${response.statusText}`
+        );
       }
 
-      return response.status;  // Return the status code even if it's not 204
+      return response.status; // Return the status code even if it's not 204
     } catch (error) {
       console.error(`Error deleting todo with ID ${todo_id}:`, error);
-      throw error;  // Rethrow the error for the caller to handle
+      throw error; // Rethrow the error for the caller to handle
     }
   }
-
-
-
-
-
 }
